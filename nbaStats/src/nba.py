@@ -24,8 +24,8 @@ def lineupEvaluation(lineup):
 
         value.sort(key = get_Value, reverse = True)
         
-        df = pd.DataFrame(value)
-        df.columns = ['Player' , 'Value', 'Salary']
+        df = pd.DataFrame(value) # Puts the list into a data frame to export
+        df.columns = ['Player' , 'Value', 'Salary'] # Names the columns
         df.to_csv('../value/lineupValue.csv')
         
 class GUI:
